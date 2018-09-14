@@ -1,0 +1,5 @@
+Python 3.6 or superior
+requests
+bs4 BeautifulSoup 
+html5lib
+pyperclip
