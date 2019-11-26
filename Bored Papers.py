@@ -14,13 +14,13 @@ except:
 
 subjects = soup.find_all('a')
 def random_subjects():
-    #Subjects starts at 14
+    # Subjects starts at 14
     random_a = randint(14, len(subjects))
     print(f'Tópico escolhido: {subjects[random_a].text}')
     return subjects[random_a].text
 
 def fmted_url(sbjct):
-    #Google's schoolar base url
+    # Google's schoolar base url
     url = 'https://scholar.google.com.br/scholar?hl=eng&as_sdt=0%2C5&q={}&oq='
     final_url = url.format(sbjct)
     return final_url
